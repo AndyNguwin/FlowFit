@@ -8,36 +8,49 @@ function App() {
     <div className="flex flex-col gap-10">
       <NavBar></NavBar>
       
-      <Grid numItems={2} numItemsSm={1} numItemsLg={2} className="gap-2">
-        <Col numColSpan={1}>
-          <Card>
-            <Text>Title</Text>
-            <Metric>KPI 1</Metric>
-          </Card>
-        </Col>
-        
-        <Card>
-          <Text>Title</Text>
-          <Metric>KPI 2</Metric>
-        </Card>
+      <div>
+        <div className="grid grid-cols-3 grid-rows-4">
 
-        <Col>
-          <Card>
-            <Text>Title</Text>
-            <Metric>KPI 3</Metric>
-          </Card>
-        </Col>
-        
-        <Card>
-          <Text>Title</Text>
-          <Metric>KPI 4</Metric>
-        </Card>
-        
-        <Card>
-          <Text>Title</Text>
-          <Metric>KPI 5</Metric>
-        </Card>
-      </Grid>
+          <div class="Welcome Message" className="col-span-2">
+            <Card className="bg-content-card">
+              <Metric>Good morning! 🌞 Welcome to a new day of fitness and wellness. Let's make it count! 💪 #MorningMotivation #FitnessGoals 🔥🔥🔥</Metric>
+            </Card>
+          </div>
+    
+          <div class="Heatmap" className="col-span-1">
+            <Card className="bg-content-card">
+              <Metric>Heatmap</Metric>
+            </Card>
+          </div>
+          
+          <div class="" className="col-span-2 ">
+            <Card className="bg-content-card">
+              <Metric>Weekly Calendar</Metric>
+            </Card>
+          </div>
+
+          <div class="" className="col-span-1">
+            <Card className="bg-content-card">
+              <Metric>Graph 1</Metric>
+            </Card>
+          </div>
+
+          <div class="Week" className="col-span-2">
+            <Card className="bg-content-card">
+              <Metric>Days of the Week</Metric>
+            </Card>
+          </div>
+
+          <div class="" className="col-span-1">
+            <Card className="bg-content-card">
+              <Metric>Graph 2</Metric>
+            </Card>
+          </div>
+
+        </div>
+
+      </div>
+
 
     </div>
   )

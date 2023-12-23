@@ -18,6 +18,9 @@ module.exports = {
           text: "#ffffff",
           outline: "#4682A9",
         },
+        content: {
+          card: "#DDF2FD",
+        },
 
         // light mode
         tremor: {
