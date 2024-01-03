@@ -1,5 +1,6 @@
 // import './App.css'
 import '../App.css'
+import { Button } from '@tremor/react';
 import pfp from '../assets/profile_pic.jpg'
 import logo from '../assets/flowfit_logo.png'
 
@@ -10,9 +11,9 @@ function NavBar() {
                 <div className='flex flex-row items-center justify-start gap-10'>
                     <img className="max-h-20" src = {logo}/>
                     <ul className='flex flex-row justify-item-center gap-10'>
-                        <li>Home</li>
-                        <li>Exercises</li>
-                        <li>About</li>
+                        <Button><li>Home</li></Button>
+                        <Button><li>Exercises</li></Button>
+                        <Button><li>About</li></Button>
                     </ul>
                 </div>
 
