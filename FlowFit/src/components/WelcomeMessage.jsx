@@ -1,4 +1,4 @@
-import {Card, Metric} from "@tremor/react";
+import { Card, CardContent } from "@mui/material";
 
 function WelcomeMessage(){
 
@@ -12,8 +12,10 @@ function WelcomeMessage(){
   
     return (
       <div className="griddy">
-        <Card id="welcome">
-          <Metric>{dayMessage}</Metric>
+        <Card id = "welcome" variant="outlined">
+          <CardContent>
+            {dayMessage}
+          </CardContent>
         </Card>
       </div>
     )

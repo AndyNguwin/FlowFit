@@ -7,7 +7,6 @@ function Home(){
         <NavBar/>
         <WelcomeMessage/>
         {/* <HeatMap/> */}
-    
     </div>
   )
 }
