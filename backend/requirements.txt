@@ -1,0 +1,6 @@
+distlib==0.3.8
+filelock==3.13.1
+mysqlclient==2.2.1
+platformdirs==4.1.0
+python-dotenv==1.0.0
+virtualenv==20.25.0
