@@ -1,6 +1,6 @@
 // import './App.css'
 import '../App.css'
-import { Button } from '@tremor/react'
+import Button from '@mui/material/Button'
 import pfp from '../assets/profile_pic.jpg'
 import logo from '../assets/flowfit_logo.png'
 import { Link } from 'react-router-dom';
@@ -13,16 +13,18 @@ function NavBar() {
                 <div className='flex flex-row items-center justify-start gap-10'>
                     <img className="max-h-20" src = {logo}/>
                     <ul className='flex flex-row justify-item-center gap-10'>
-                        <Button><Link to="/home"><li>Home</li></Link></Button>
-                        <Button><Link to="/newexercise"><li>Exercises</li></Link></Button>
-                        <Button><li>About</li></Button>
+                        <Button sx={{color: '#ffffff', '&:hover': {backgroundColor: '#4682A9'}}}><Link to="/home"><li>Home</li></Link></Button>
+                        <Button sx={{color: '#ffffff', '&:hover': {backgroundColor: '#4682A9'}}}><Link to="/newexercise"><li>Exercises</li></Link></Button>
+                        <Button sx={{color: '#ffffff', '&:hover': {backgroundColor: '#4682A9'}}}><li>About</li></Button>
                     </ul>
                 </div>
 
-                <ul className='flex flex-row items-center justify-end gap-5'>
-                    <li>Profile</li> 
-                    <img className="max-h-10 pr-3" src={pfp}/>
-                </ul>
+                <Button sx={{color: '#ffffff', '&:hover': {backgroundColor: '#4682A9'}}}>
+                    <ul className='flex flex-row items-center justify-end gap-5'>
+                        <li>Profile</li> 
+                        <img className="max-h-10 pr-3" src={pfp}/>
+                    </ul>
+                </Button>
                 
             </div>
         </>
