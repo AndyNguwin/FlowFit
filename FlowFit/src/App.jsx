@@ -1,36 +1,25 @@
 import { Grid, Col, Card, Text, Metric } from "@tremor/react";
 import NavBar from './components/NavBar.jsx'
-import './App.css'
+import WelcomeMessage from './components/WelcomeMessage.jsx';
+import Home from './pages/Home';
+import NewExercise from './pages/NewExercise.jsx';
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col gap-10">
-      <NavBar/>
-      <WelcomeMessage/>
-      {/* <HeatMap/> */}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="/home" element={<Home />}/>
+        <Route path="/newexercise" element={<NewExercise/>}/>
+        {/* <Route index element={<Home />} /> */}
+      </Routes>
+    </BrowserRouter>
 
-    </div>
-  )
+  );
 }
 
 
 export default App;
 
-function WelcomeMessage(){
-
-  const now = new Date();
-
-  const hours = now.getHours(); // 24 hours
-
-  const dayMessage = (hours > 5 && hours < 12) ? "🌞 Good morning! ⚡ Start your day with a burst of energy. Remember, every workout brings you one step closer to your goals. 💪 Let's make today amazing!"
-  : (hours >= 12 && hours < 16) ? "🌞 Good afternoon! ⚡ It's the perfect time to re-energize your day. Your fitness journey is a marathon, not a sprint. ✊ Keep pushing forward! 💪"
-  : "🌙 Good evening! ⚡ Unwind and rejuvenate with a rewarding workout. You're not just building muscles, you're building a stronger you. 💪 Let's end the day on a high note! 🔥🔥🔥";
-
-  return (
-    <div className="griddy">
-      <Card id="welcome">
-        <Metric>{dayMessage}</Metric>
-      </Card>
-    </div>
-  )
-}
