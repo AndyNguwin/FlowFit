@@ -5,15 +5,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/home" element={<Home />}/>
-        <Route path="/exercises" element={<Exercises/>}/>
-        {/* <Route index element={<Home />} /> */}
-      </Routes>
-    </BrowserRouter>
-
+    <div className='h-full'>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/home" element={<Home />}/>
+          <Route path="/exercises" element={<Exercises/>}/>
+          {/* <Route index element={<Home />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

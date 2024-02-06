@@ -11,13 +11,13 @@ function WelcomeMessage(){
     : "🌙 Good evening! ⚡ Unwind and rejuvenate with a rewarding workout. You're not just building muscles, you're building a stronger you. 💪 Let's end the day on a high note! 🔥🔥🔥";
   
     return (
-      <div className="griddy">
+      // <div className="griddy">
         <Card id = "welcome" variant="outlined">
           <CardContent>
             {dayMessage}
           </CardContent>
         </Card>
-      </div>
+      // </div>
     )
     }
 export default WelcomeMessage;
