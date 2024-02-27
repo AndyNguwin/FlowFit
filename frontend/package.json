@@ -16,6 +16,7 @@
     "@mui/material": "^5.15.2",
     "@mui/styled-engine-sc": "^6.0.0-alpha.10",
     "@tremor/react": "^3.12.1",
+    "axios": "^1.6.7",
     "cal-heatmap": "^4.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

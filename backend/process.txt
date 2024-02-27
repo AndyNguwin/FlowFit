@@ -1,0 +1,9 @@
+On web app load, query table to grab all exercise data + streaks
+
+Load data and streak into home page / charts
+
+If the person wants to add a exercise or modify, send exercise data to backend for queries and modifications
+
+Frontend --> User Data, Backend --> Return all Exercise + Data
+
+Frontend --> Exercise, Backend --> Create Exercise in SQL
