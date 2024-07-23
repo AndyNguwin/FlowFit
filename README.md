@@ -11,4 +11,4 @@ This website (so far) is built using Vite + React, MaterialsUI, and TailwindCSS.
 
 2\. Change directories into the frontend folder of Flowfit
 
-2\. Run the command npm start dev and view the frontend with the localhost link
+2\. Run the command npm run dev and view the frontend with the localhost link
